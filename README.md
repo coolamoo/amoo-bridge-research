@@ -1,5 +1,7 @@
 # AMOO Bridge Research · 手机自动化桥接研究
 
+> **失忆了先看 [INDEX.md](INDEX.md)** —— 按「我现在卡在哪」直接跳到对应结论。
+
 这份仓库记录「用无障碍桥在 Android 手机上驱动第三方 App 完成任务」的实测结论，
 以高德地图（`com.autonavi.minimap`）的达人日常任务为第一条落地链路。
 
@@ -20,10 +22,13 @@
 
 | 文件 | 内容 |
 |---|---|
+| `INDEX.md` | **回忆索引**：场景路由表、速查卡、词汇表、时间线 |
 | `docs/01-bridge-protocol.md` | 桥的文件队列协议、命令集、生命周期与故障判定 |
 | `docs/02-amap-daily-tasks.md` | 高德达人答题 / 地图大富翁的完整操作路径与坐标 |
 | `docs/03-pitfalls.md` | 踩坑清单：坐标偏移、前台抢占、OCR 失效、服务掉线 |
 | `docs/04-screenshot-channel.md` | 把设备截图送到远端看懂的通道（ntfy 中转） |
+| `scripts/send-cmd.sh` | 往队列写命令并等结果的封装 |
+| `scripts/relay-shot.sh` | 设备侧后台上传最新截图的脚本 |
 
 ## 三条最贵的经验
 
